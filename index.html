@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NPM</title>
+</head>
+<body>
+    <h2>O que é NPM?</h2>
+    <p>O NPM é uma ferramenta do Node.js para o gerenciamento de pacotes. Ele permite instalar, desinstalar e atualizar dependências em uma aplicação por meio de uma simples instrução na linha de comando. Sempre que um projeto é criado por meio do gerenciador, é adicionado um arquivo chamado package.json, que contém a relação dos pacotes instalados no ambiente.</p>
+
+    <h2>Principais Comandos</h2>
+    <h4>npm help {COMMAND}</h4>
+    <p>Para se obter o manual do comando</p>
+    <h4>npm install {MODULE}</h4>
+    <p>Ou apenas “npm i {MODULE}“, é usado para instalar dependências</p>
+    <ul>
+        <li>Executar apenas “npm install“ instala todas as dependências configuradas no arquivos package.jso</li>
+        <li>Ao usar a flag “--production“ serão instaladas apenas depedências de produção;
+        </li>
+    </ul>
+    <h4>npm remove {MODULE}</h4>
+    <p>Remove um módulo previamente instalado</p>
+    <h4>npm init</h4>
+    <p>Comando usado para iniciar um projeto novo na pasta atual, se utilizado a flag “-y“ assim “npm init -y“ será gerado uma inicialização com os parâmetros default sem questionamentos.</p>
+    <h4>npm ci</h4>
+    <p>Usado para o deploy de aplicações instalando todas as dependência definidas package.json e versões do package-lock.json</p>
+    <h4>npm outdated</h4>
+    <p>Retorna a lista de dependências desatualizadas mostrando a versão mais recente suportada pela configuração no package.json e a ultima versão</p>
+    <h4>npm update</h4>
+    <p>Atualiza projetos para a ultima versão respeitando o package.json
+        Pode-se atualizar um único módulo executando “npm update {MODULE}”</p>
+    <h4>npm version {COMMAND}</h4>
+    <p>Manipula a versão atual do projeto e adiciona tags no projeto git
+        Comandos disponíveis: {VERSION} | major | minor | patch | premajor | preminor | prepatch | prerelease
+        Ex: npm version patch ou npm version 1.0.20</p>
+    <h4>npm audit</h4>/h4>
+    <p>Executa uma auditoria no projeto para identificar se existe alguma dependência com vulnerabilidade conhecida
+    Ao utilizar a flag --fix é feita uma tentativa de corrigir o problema de forma automática.</p>
+    <h4>npm list</h4>
+    <p>Ou apenas “npm ls”, lista todas as dependências do projeto
+    Com a flag “–depth X” podemos ver uma arvore de dependências onde X é a profundidade que se deseja</p>
+    <h4>npm shrinkwrap</h4>
+    <p>Comando usado para travar a versão das dependências do seu projeto
+    Ao executar esse comando será criado o arquivo npm-shrinkwrap.json que servirá de base para instalação das dependências</p>
+    <h4>npm adduser {USERNAME}</h4>
+    <p>Adiciona um novo usuário no registre para permitir o envio de pacotes para o mesmo</p>
+    <h4>npm publish</h4>
+    <p>Publica o módulo atual no registre configurado</p>
+    <h4>npm home {MODULE}</h4>
+    <p>Abre a página do projeto</p>
+    <h4>npm repo {MODULE}</h4>
+    <p>Abre o repositório de código do projeto</p>
+    <br>
+    <p>Referência: <a href="https://meneguite.com/2021/07/05/principais-comandos-do-npm/">Clique aqui</a></p>
+
+</body>
+</html>
